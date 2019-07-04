@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script>
+        //function that displays the value 
+        function display(val) {
+            document.getElementById("result").value+=val
+        }
+        // function that evaluates the digits and the return result
+        function solve(){
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value=y
+        }
+        // function that clears the display
+        function clr() {
+            document.getElementById("result").value=""
+        }
+        </script>
+        <!--for the love of style-->
+        <style>
+        .title{
+            margin-bottom:10px;
+            text-align:center;
+            width:200px;
+            color:gray;
+            border:solid black 2px;
+        }
+         input [type="button"] {
+            background:black;
+            color:black;
+            border:solid black 2px;
+            width:2px;
+         }
+
+        input[type="text"] {
+            background-color:white;
+            border:solid red 2px ;
+            width:100%; 
+        }<br>
+        </style>
+    
+    <!--making a table for the display-->
+    </head>
+    <body>
+        <div class =  title>Math!</div>
+        <table border="1">
+            <tr>
+                <td> <colspan="3"><input type="text" id ="result"></td>
+                <td><input type="button" value="c" onclick="clr()"</td>
+                <tr>
+                <!--clears the display giving the c button some functions-->
+                <td><input type="button" value="7" onclick=display('7')></td>
+                <td><input type="button" value="8" onclick=display('8')></td> 
+                <td><input type="button" value="9" onclick=display('9')></td>
+                <td><input type="button" value="/" onclick=display('/')></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick=display('4')></td>
+                <td><input type="button" value="5" onclick=display('5')></td>
+                <td><input type="button" value="6" onclick=display('6')></td>
+                <td><input type="button" value="*" onclick=display('*')></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick=display('4')></td>
+                <td><input type="button" value="5" onclick=display('5')></td>
+                <td><input type="button" value="6" onclick=display('6')></td>
+                <td><input type="button" value="-" onclick=display('-')></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick=display('7')></td>
+                <td><input type="button" value="8" onclick=display('8')></td>
+                <td><input type="button" value="9" onclick=display('9')></td>
+                <td><input type="button" value="/" onclick=display('+')></td>
+                <td><input type="button" value="=" onclick='solve()'></td>
+            </tr>
+                
+
+
+    </body>
+</html>
