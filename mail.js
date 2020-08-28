@@ -30,3 +30,10 @@ transporter.sendMail(mailOptions, function(error, info) {
         console.log('email sent!');
     }
 });
+/* this should work as long as you go into your settings and change the security so that it will allow outside sorces.
+I solved this by going to the following url (while connected to google with the account I want to send mail from):
+
+https://www.google.com/settings/security/lesssecureapps  //this should help :)
+
+There I enabled less secure apps.
+*/
