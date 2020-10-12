@@ -1,0 +1,66 @@
+
+* {
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
+}
+
+#align {
+  height:100%;
+  margin: 0 auto;
+  text-decoration: none; 
+  font-size: 3em;
+  text-align: left;
+
+lable {
+  display:block;
+  width:100%;
+  padding:5px 10px;
+}
+
+button {
+  color: lightblue; 
+  border-radius:5px;
+}
+
+button:hover{
+  background-color:pink;
+  cursor: pointer;
+}
+
+a:hover {
+  color: pink;
+  cursor: pointer;
+}
+
+body {display: flex;
+-moz-box-align: center;
+align-items: center;
+flex-direction: column;
+-moz-box-pack: center;
+justify-content: center;
+text-align: center;
+flex: 1 0 auto;
+animation: mymove 5s infinite;
+background-color: rgb(69,0,0);
+  padding: 50px}
+form {
+  background-color:white;
+  padding:10em;
+  margin:0 auto;
+  height:100%;
+  border: 1px solid red;
+  font-size:5px;
+  border-radius: 10px;
+}
+@keyframes mymove {
+  50% {background: blue bottom right/50px 50px;}
+  
+input[type='email'] {
+    width:100%;
+  }
+
+h1 {
+    text-align:left;
+  }
+
